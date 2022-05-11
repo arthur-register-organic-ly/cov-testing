@@ -32,3 +32,6 @@ jobs:
         with:
           pytest-coverage-path: ./pytest-coverage.txt
           junitxml-path: ./pytest.xml
+      - name: Remove coverage file
+        run: |
+          rm ./pytest-coverage.txt
